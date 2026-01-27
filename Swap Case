@@ -1,2 +1,12 @@
 def swap_case(s):
-    return s.swapcase()
+    new_s = ""
+    for i in s:
+        if i.isalpha():
+            if i.islower():
+                new_s += i.upper()
+            else:
+                new_s += i.lower()
+        else:
+            new_s += i
+    return new_s
+
